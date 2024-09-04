@@ -1,0 +1,18 @@
+footer {
+    background-color: #ccc;
+    bottom: 0;
+    border-top: 1px solid #999;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    left: 0;
+    padding: 20px 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}

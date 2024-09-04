@@ -1,0 +1,81 @@
+.container {
+ max-width: 1200px;
+}
+
+h3 {
+ color: #2e64a1;
+}
+
+.btn {
+ font-size: 14px;
+ padding: 8px 12px;
+}
+
+.btn-danger {
+ background-color: #dc3545;
+ border-color: #dc3545;
+}
+
+.btn-danger:hover {
+ background-color: #c82333;
+ border-color: #bd2130;
+}
+
+.btn-success {
+ background-color: #28a745;
+ border-color: #28a745;
+}
+
+.btn-success:hover {
+ background-color: #218838;
+ border-color: #1e7e34;
+}
+
+.table {
+ background-color: #ffffff;
+}
+
+.table-dark {
+ background-color: #343a40;
+ color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+ background-color: #ffffff !important;
+}
+
+.table td, .table th {
+ vertical-align: middle;
+}
+
+.text-end {
+ text-align: right;
+}
+
+.fw-bold {
+ font-weight: 600;
+}
+
+.me-2 {
+ margin-right: 0.5rem;
+}
+
+.flex{
+ align-items: flex-end;
+ display: flex;
+ flex-direction: column;
+ justify-content:center;
+}
+
+.imagen-container img {
+ max-width: 100px; 
+ height: auto; 
+ border-radius: 5px; 
+ object-fit: cover; 
+ display: block;
+ margin: 0 auto;
+}
+
+.table td.imagen-container {
+ text-align: center;
+}

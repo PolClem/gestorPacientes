@@ -1,0 +1,35 @@
+<div class="container" style="max-width: 500px; margin-top: 100px;">
+    <div class="row justify-content-center">
+        <div class="col">
+            <h4 class="text-center my-4" style="color: #2e64a1; font-weight: 600;">Modificar paciente</h4>
+            <form action="/admin/pacientes/modificar" method="post" enctype="multipart/form-data" style="border: 1px solid #dee2e6; border-radius: 10px; background-color: #ffffff; padding: 30px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                <input type="hidden" value="{{paciente.id}}" name="id">
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Nombre y apellido</label>
+                    <input type="text" class="form-control" id="inputName" name="nombre" value="{{paciente.nombre}}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputAge" class="form-label">Edad</label>
+                    <input type="text" class="form-control" id="inputAge" name="edad" value="{{paciente.edad}}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputImage" class="form-label">Imagen</label>
+                    <input type="file" class="form-control" id="inputImage" name="imagen">
+                    <div class="form-check mt-2">
+                        <input type="checkbox" class="form-check-input" id="img_delete" name="img_delete" value="1">
+                        <label class="form-check-label" for="img_delete">Eliminar imagen actual?</label>
+                    </div>
+                    <input type="hidden" name="img_original" value="{{paciente.img_id}}">
+                </div>
+                <div class="mb-3">
+                    <label for="inputCondition" class="form-label">Condición Médica</label>
+                    <textarea class="form-control" id="inputCondition" name="condicion" required>{{paciente.condicion}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100" style="background-color: #2e64a1; border-color: #2e64a1;">Modificar</button>
+                {{#if error}}
+                    <p class="text-danger mt-3 text-center">{{message}}</p>
+                {{/if}}
+            </form>
+        </div>
+    </div>
+</div>

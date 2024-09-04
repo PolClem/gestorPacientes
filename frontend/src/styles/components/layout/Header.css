@@ -1,0 +1,20 @@
+header {
+    background-color: #2e64a1;
+    max-height: 200px;
+    padding: 16px 0;
+}
+
+header .holderHeader {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 100;
+    margin-left: 10px;
+}
